@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_app/home/home_page/search_box.dart';
 import 'package:grocery_app/widgets/app_bar/app_bar.dart';
 import 'package:grocery_app/widgets/resusable/products_card.dart';
+import 'package:grocery_app/widgets/resusable/sale_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -67,18 +68,18 @@ class HomePage extends StatelessWidget {
                     title: "Vegetables",
                     description:
                         "Vegetables are parts of plants that are consumed by humans...",
-                    titleColor: Colors.black,
-                    descriptionColor: Colors.black,
+                    titleColor: Colors.white,
+                    descriptionColor: Colors.white,
                     mainBoxColor: Colors.blueAccent,
-                    smallBoxColor: Colors.white),
+                    smallBoxColor: Colors.blueGrey),
                 ProductsCard(
                     title: "Fish Meats",
                     description:
                         "Fish is the flesh of an animal used for food, and by that definition...",
-                    titleColor: Colors.black,
-                    descriptionColor: Colors.black,
+                    titleColor: Colors.white,
+                    descriptionColor: Colors.white,
                     mainBoxColor: Colors.blueAccent,
-                    smallBoxColor: Colors.white),
+                    smallBoxColor: Colors.blueGrey),
               ],
             ),
             SizedBox(
@@ -93,7 +94,14 @@ class HomePage extends StatelessWidget {
             ),
             SizedBox(
               height: 15,
+            ),
+            Row(
+              children: [
+                SaleCard(title: "Washing Liquid", productSize: "230ml", price: "220", mainBoxColor: Colors.indigo, smallBoxColor: Colors.grey),
+                SaleCard(title: "Ear Phone", productSize: "1", price: "10", mainBoxColor: Colors.brown, smallBoxColor: Colors.yellow)
+              ],
             )
+
           ],
         ),
       ),
