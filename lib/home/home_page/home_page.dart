@@ -97,11 +97,20 @@ class HomePage extends StatelessWidget {
             ),
             Row(
               children: [
-                SaleCard(title: "Washing Liquid", productSize: "230ml", price: "220", mainBoxColor: Colors.indigo, smallBoxColor: Colors.grey),
-                SaleCard(title: "Ear Phone", productSize: "1", price: "10", mainBoxColor: Colors.brown, smallBoxColor: Colors.yellow)
+                SaleCard(
+                    title: "Washing Liquid",
+                    productSize: "230ml",
+                    price: "220",
+                    mainBoxColor: Colors.indigo,
+                    smallBoxColor: Colors.grey),
+                SaleCard(
+                    title: "Ear Phone",
+                    productSize: "1",
+                    price: "10",
+                    mainBoxColor: Colors.brown,
+                    smallBoxColor: Colors.yellow)
               ],
             )
-
           ],
         ),
       ),
