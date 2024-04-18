@@ -80,6 +80,19 @@ class HomePage extends StatelessWidget {
                     mainBoxColor: Colors.blueAccent,
                     smallBoxColor: Colors.white),
               ],
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Text(
+                "For Sale and Low Costs",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ),
+            SizedBox(
+              height: 15,
             )
           ],
         ),

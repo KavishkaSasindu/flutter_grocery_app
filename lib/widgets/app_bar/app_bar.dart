@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 Widget appLeadingWidget = Padding(
   padding: const EdgeInsets.all(5.0),
