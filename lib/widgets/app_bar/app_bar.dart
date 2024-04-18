@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 Widget appLeadingWidget = Padding(
   padding: const EdgeInsets.all(5.0),
@@ -32,18 +33,20 @@ Widget appTitleWidget = Column(
   ],
 );
 
-Widget appActionOne = Padding(
-  padding: const EdgeInsets.all(5.0),
-  child: Container(
-    width: 50,
-    height: 50,
-    decoration: BoxDecoration(
-        color: Colors.amber, borderRadius: BorderRadius.circular(1000)),
-    child: const Center(
-      child: Icon(
-        Icons.card_travel,
-        color: Colors.white,
+List<Widget>? appBarAction = [
+  Padding(
+    padding: const EdgeInsets.all(5.0),
+    child: Container(
+      width: 50,
+      height: 50,
+      decoration: BoxDecoration(
+          color: Colors.amber, borderRadius: BorderRadius.circular(1000)),
+      child: const Center(
+        child: Icon(
+          Icons.card_travel,
+          color: Colors.white,
+        ),
       ),
     ),
   ),
-);
+];
