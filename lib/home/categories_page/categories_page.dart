@@ -11,6 +11,7 @@ class CategoryPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.arrow_back),
+        centerTitle: true,
         title: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 80.0),
           child: Text("Category"),
