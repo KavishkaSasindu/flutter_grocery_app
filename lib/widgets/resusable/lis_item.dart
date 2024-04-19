@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class ListItem extends StatelessWidget {
-  const ListItem({super.key});
+  final String number;
+  final String title;
+  const ListItem({super.key, required this.number, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -17,16 +19,18 @@ class ListItem extends StatelessWidget {
             decoration: BoxDecoration(
                 color: const Color(0xffFFE500),
                 borderRadius: BorderRadius.circular(100)),
-            child: const Center(
-              child: Text("1"),
+            child: Center(
+              child: Text(number),
             ),
           ),
         ),
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.only(left: 8.0),
+            padding: const EdgeInsets.only(
+              left: 8.0,
+            ),
             child: Text(
-              "Vegetables are parts of plants that are consumed by humans...",
+              title,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style:

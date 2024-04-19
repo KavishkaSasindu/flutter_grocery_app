@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/widgets/resusable/lis_item.dart';
+import 'package:grocery_app/widgets/resusable/rating_card.dart';
 
 class SelectItem extends StatelessWidget {
   const SelectItem({super.key});
@@ -35,9 +36,24 @@ class SelectItem extends StatelessWidget {
               SizedBox(
                 height: 5,
               ),
-              ListItem(),
-              ListItem(),
-              ListItem(),
+              ListItem(
+                number: "1",
+                title:
+                    "Vegetables are parts of plants that are consumed by humans...",
+              ),
+              ListItem(
+                  number: "2",
+                  title:
+                      "Vegetables are parts of plants that are consumed by humans..."),
+              ListItem(
+                  number: "3",
+                  title:
+                      "Vegetables are parts of plants that are consumed by humans..."),
+              ListItem(
+                  number: "4",
+                  title:
+                      "Vegetables are parts of plants that are consumed by humans..."),
+              RatingCard(),
             ],
           ),
         ),
